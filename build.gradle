@@ -60,11 +60,6 @@ dependencies {
 	compileOnly 'org.springframework.data:spring-data-rest-webmvc:3.3.0.RELEASE'
 	compile 'io.sentry:sentry-spring:1.7.30'
 
-	/* Documenting this shit before stashing it:
-	* When Liquibase works, please trim this list of liquibaseRuntime dependencies because we don't need all
-	* They're just there because it's helpful in debugging and trying different strategies to make Liquibase work
-	* Awaiting: https://github.com/liquibase/liquibase/issues/1089
-	* */
 	liquibaseRuntime 'org.liquibase:liquibase-core:3.+'
 	liquibaseRuntime 'org.liquibase:liquibase-groovy-dsl:2.+'
 	liquibaseRuntime 'com.h2database:h2:1.+'
